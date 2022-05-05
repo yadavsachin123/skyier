@@ -1,1 +1,1 @@
-# skystydies.com
+# skystudies.com
