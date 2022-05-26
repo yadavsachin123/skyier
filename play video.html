@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play video</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhMrXkhCN1m1ynaYdQTRMK49JFNn_seAjOQfO3dla3PW24xJ5lSY9LATaBMTnY82h62DM9-EuS_9rGUtnWJZ6ezJZkatuT0LCUcADs0wxoU_E5rr1ndl-jp6-ShGC2UthB8sTCUI2wnlNz3APf4QAdnq7sHsmz1EtQg6jMMmgIyi7JlerSPZWnSNI12g/s45/menu.png" class="menu-icon">
+           <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb8ZceIWuZefoAVEe8s24l54njzWFwR3qsaW0g9fZu8ZZfGRGMUM4wwosEgYdimQ5pacmqNzY_jRxYHZHqeY_LOAn0lRCpHQRpdjreA88ID_WVZbvcKPHBQ2NLKlQh-KQQvBAB09Yha-32OryWcZNGaEBTQPywNEnj9-VIOw4RspnPGgT36oygpolqfg/s234/logo.png" class="logo">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6vAOiOUtJyrw54c5yPUHHVTpbqvHt-AaYtESza11Rza3bbK2NqSO536i4b3XJKheli9e9DX1nh3NeZ0IwfP_KaxiBdl7IJxbEOeZ28W1jxghO8Qss0ML82QQSbfVMRlSi6kriTB6JVAt83_qIQjyTmezHI44znZMbLP37P7oeOzgKsOtEArGwfSvCug/s1600/SKyPlay%20fit%20cropped.png" class="logo">-->
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzsHlG7gFtcFJCS0H9fK6nCm7FHiiZD_Jv4nrmAFtri9PVi0UWJKI51HLPKAHwcFBWkRD7hfBMZbk6zodgvkrMmsuvAmDP6KmEX9-Ub2J7oxr9Sk2UEO8UaYcCX2N5ZKKORfs2rI4-VitpS_iPHokpxh4XDwnS6hamDrwHgHuuy7hUsmfWYOnLeCqyGw/s1600/SKyPlay%20with%20circle%20fit%20cropped%20(logo).png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="SKy Search..">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhELXs1rBnwgYLuQxlab64YXy675yIVXqNjcG8lj_B_fO8NaTE0tc_u8hFdJmn58jcBb0frKdYjvKIOpexRJPSjaVIiEXXVAq4Pqjv06ntzyjSUE4bw-ghu4Gi4pk0giLeEHB9Ers94Yu9X-twAsrvFEvbWS1UIj5wKZ9AN3g6Ao7aEfhhN99_Fnt4RlA/s24/search.png">
+            </div>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7CuD6-3hbH6AxtVwH0gFiiYDXGac5ucsZGb-rB2H-j3hipOpZHEOCnCnc1ZOCSr-HlepbnXvWUAW511rr0TWHvGZRImxdsPVdmnR00caM8Rea_fhNiq0IHfr3PF-12GLsKhB8fmSjI1PNfVPUt_6PevxQtoFhadLWLC2B6esHKnzg2JxB2P_zcQMjdQ/s62/voice-search.png" class="mic-icon">
+        </div>
+     <div class="nav-right flex-div">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilCYv1jlVmkXu1pwW3PjDVoA5oZv9nZm6i79sfwBf30uhTmbz-x_qxfFftXJ7rZOr6pR-Ry--YVRl4nbz6ihlVgWsuQHKgmXaChTOFuNCd0XGr07ejHQtND6kT_OIaqBpyNtvP9y-Xhm4f46HOk9MlzyQyqSEP1UWrzodgMwEgk5LWphvQx2KHysIbgQ/s50/upload.png">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqwJud9rj5hPz8sK3hbW3-Z6kSlulIm_NxN1Blwa0diPrMyOeVKNwexszOWVsd1go4hPcNSbX7D_FP9DeeJVuLxTcJXXttdtNQXPfdjmlXvivpl0nsqi6wHbJHf1a9Lp_R0JoyVaaNL6pKUFnRXl78SYPwRfvxMD9FOPtpLdyJxzMsZHKsl3BLkVNz0A/s50/more.png">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk55y030eRjvUj4gFDoXRx8bqdzLMs73qseL-_VyM29iBzlzWIjZmOR4CQGUVBqUHfkRrEdzj81OnqDO1bGHoghDCIx4I3sTTfWhD6x97De5iQRsGCWY_arvbbcJ_6W14BESr2_RBDGKlPUo6dwqzRP3K6YzSwlb4DlqEXgZthq8xJXuih4WphamUvkQ/s50/notification.png">
+           <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s320/Image.jpg" class="user-icon">
+     </div>
+    </nav>
+
+    <div class="container play-container">
+        <div class="row">
+            <div class="play-video">
+                <video controls autoplay>
+                    <source src="../images/video.mp4" type="video/mp4">
+                </video>
+
+
+                <div class="tags">
+                    <a href=""></a> <a href="">#Coding</a><a href="">#HTML</a> <a href="">#CSS</a> <a href="">#JavaScript</a>
+                </div>
+
+                <h3> Demo of web Development (Only for educational purpose)</h3>
+                <div class="play-video-info">
+                    <p>20,653 Views &bull; 2 months ago</p>
+               
+                       <div>
+                       <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeMYvgbVRGQTnJcfs5BiFwWKAloO-mlZ7BVnr7K4P8KcVJVsHk6wIa2QqjqYdwzWPeHTwhHwc27WMNxE2g5QwLSpU0pXt4ulsJYY_AF_2HHSz69i_8ittBA6l90-HAPyMmZRZXAuxNFShE2p0D1GHCJptvN48P56Uvkhzb_YhS6QHtWs5LnxyF63yXyA/s50/like.png" alt="like">13k</a>
+                       <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-jOO_WY3PncdMdN4_EPrrGoQKt8AZzadUpEAH_oYKi8JB4POJhRRkq_8eLAd61looRLBYYxqBUQTCxDF1oQXwbkaJJCork5aL8saW-woWmjuH5C8ZeQXlzbUzYce3WXBfBgBpMVi35TVO-rVAgH_N0geF4-v3ga0OGD4xzxUvUvvH7tdgHg0xJ2PIIQ/s50/dislike.png" alt="Dislike">861</a>
+                       <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi6OX8PlVOG0UwSTQqeO0WMgyVP60zPERC68F-5b3lmWSSMNZHTYuAQP0qN7HzGgz6OdM79vGNQm_OcTnA-HD6tIrf1yf6ZzvxXh24d1sRS_8ZkGTwcn-tZLJxQEut58g_bwrvgpbm9LGhGSTcp1yKGwEVmXOrRpXQfIG0C3Z_dqxev693qriZTZGFMTA/s50/share.png" alt="Share">Share</a>
+                       <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_1cxk2kfEiBoO0CveOBa4MKYsaHmnnKjevX58i33ESGsLf-W7PCh98uVbLNXtrQxSNhwcqlR2x3kzk81BMCnJs6LeYHdx26JD3Vx78R8dByVrMepeQ8CMwVk3FFyBcV55OIowdodO8UkC0UY3G13kFcyg-YYRO7EHmR9w2ha8pxUhQNURYeYE6yaqaw/s50/save.png" alt="Save">Save</a>
+                       </div> <hr>
+                </div> <hr>
+                <div class="publisher">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg" alt="Image">
+                    <div>
+                        <p>SKyier</p>
+                        <span>359k Subscribers</span>
+                    </div>
+                    <button type="button">Subscribe</button>
+                </div>
+                <div class="vid-discription">
+                    <p>Channel creating only for practicing </p>
+                    <p>subscribe to more</p> <hr>
+                    <h4> 1.2k Comment</h4>
+
+                    <div class="add-comment">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg" alt="">
+                        <input type="text" placeholder="Write comments..." >
+                        
+                    </div>
+                    <div class="Old-comment">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggR_VrULfcaKPJdOJ7PFzR-cjJc2NTR2TLONlP1eYf-07VR5aMlqyVWg9Fry5hhWhYrA7wfg_cF40tOhS6wzUwAlE_IXqR3WPdFk-Dn2HVyal6FHi5izutMtVUbp3astDPHrmSHFPb7WyLPZPk66xi1SyB3aUAvSjYBPiTrK3k720vG1wJtDtDrGIy-A/s320/mr%20indian%20hacker.png" alt="mr. indian hacker">
+                        <div>
+                            <h3>Mr. Indian Hacker <span> 2 minutes ago </span></h3>
+                            <p> hello Skyier dost we are here for  your help contact us on 96941xxxx9 its my contact no. you can call me any time </p>
+                            <div class="comment-action">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeMYvgbVRGQTnJcfs5BiFwWKAloO-mlZ7BVnr7K4P8KcVJVsHk6wIa2QqjqYdwzWPeHTwhHwc27WMNxE2g5QwLSpU0pXt4ulsJYY_AF_2HHSz69i_8ittBA6l90-HAPyMmZRZXAuxNFShE2p0D1GHCJptvN48P56Uvkhzb_YhS6QHtWs5LnxyF63yXyA/s1600/like.png" alt="like">
+                                <span>198</span>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-jOO_WY3PncdMdN4_EPrrGoQKt8AZzadUpEAH_oYKi8JB4POJhRRkq_8eLAd61looRLBYYxqBUQTCxDF1oQXwbkaJJCork5aL8saW-woWmjuH5C8ZeQXlzbUzYce3WXBfBgBpMVi35TVO-rVAgH_N0geF4-v3ga0OGD4xzxUvUvvH7tdgHg0xJ2PIIQ/s1600/dislike.png" alt="dislike">
+                                <span>5</span>
+                                <span>REPLY</span>
+                                <a href="">All Replies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Old-comment">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggR_VrULfcaKPJdOJ7PFzR-cjJc2NTR2TLONlP1eYf-07VR5aMlqyVWg9Fry5hhWhYrA7wfg_cF40tOhS6wzUwAlE_IXqR3WPdFk-Dn2HVyal6FHi5izutMtVUbp3astDPHrmSHFPb7WyLPZPk66xi1SyB3aUAvSjYBPiTrK3k720vG1wJtDtDrGIy-A/s320/mr%20indian%20hacker.png" alt="mr. indian hacker">
+                        <div>
+                            <h3>Mr. Indian Hacker <span> 2 minutes ago </span></h3>
+                            <p> hello Skyier dost we are here for  your help contact us on 96941xxxx9 its my contact no. you can call me any time </p>
+                            <div class="comment-action">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeMYvgbVRGQTnJcfs5BiFwWKAloO-mlZ7BVnr7K4P8KcVJVsHk6wIa2QqjqYdwzWPeHTwhHwc27WMNxE2g5QwLSpU0pXt4ulsJYY_AF_2HHSz69i_8ittBA6l90-HAPyMmZRZXAuxNFShE2p0D1GHCJptvN48P56Uvkhzb_YhS6QHtWs5LnxyF63yXyA/s1600/like.png" alt="like">
+                                <span>198</span>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-jOO_WY3PncdMdN4_EPrrGoQKt8AZzadUpEAH_oYKi8JB4POJhRRkq_8eLAd61looRLBYYxqBUQTCxDF1oQXwbkaJJCork5aL8saW-woWmjuH5C8ZeQXlzbUzYce3WXBfBgBpMVi35TVO-rVAgH_N0geF4-v3ga0OGD4xzxUvUvvH7tdgHg0xJ2PIIQ/s1600/dislike.png" alt="dislike">
+                                <span>5</span>
+                                <span>REPLY</span>
+                                <a href="">All Replies</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Old-comment">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggR_VrULfcaKPJdOJ7PFzR-cjJc2NTR2TLONlP1eYf-07VR5aMlqyVWg9Fry5hhWhYrA7wfg_cF40tOhS6wzUwAlE_IXqR3WPdFk-Dn2HVyal6FHi5izutMtVUbp3astDPHrmSHFPb7WyLPZPk66xi1SyB3aUAvSjYBPiTrK3k720vG1wJtDtDrGIy-A/s320/mr%20indian%20hacker.png" alt="mr. indian hacker">
+                        <div>
+                            <h3>Mr. Indian Hacker <span> 2 minutes ago </span></h3>
+                            <p> hello Skyier dost we are here for  your help contact us on 96941xxxx9 its my contact no. you can call me any time </p>
+                            <div class="comment-action">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeMYvgbVRGQTnJcfs5BiFwWKAloO-mlZ7BVnr7K4P8KcVJVsHk6wIa2QqjqYdwzWPeHTwhHwc27WMNxE2g5QwLSpU0pXt4ulsJYY_AF_2HHSz69i_8ittBA6l90-HAPyMmZRZXAuxNFShE2p0D1GHCJptvN48P56Uvkhzb_YhS6QHtWs5LnxyF63yXyA/s1600/like.png" alt="like">
+                                <span>198</span>
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-jOO_WY3PncdMdN4_EPrrGoQKt8AZzadUpEAH_oYKi8JB4POJhRRkq_8eLAd61looRLBYYxqBUQTCxDF1oQXwbkaJJCork5aL8saW-woWmjuH5C8ZeQXlzbUzYce3WXBfBgBpMVi35TVO-rVAgH_N0geF4-v3ga0OGD4xzxUvUvvH7tdgHg0xJ2PIIQ/s1600/dislike.png" alt="dislike">
+                                <span>5</span>
+                                <span>REPLY</span>
+                                <a href="">All Replies</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <hr>
+            </div>
+            <div class="right-sidebar">
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+                <div class="side-video-list">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" alt="">
+                    <div class="vid-info">
+                        <a href="">Best channel it is demo for web development</a>
+                        <p>SKyier</p>
+                        <p>20k views</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

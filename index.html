@@ -1,305 +1,168 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video sharing website</title>
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>Movie Design</title>
 </head>
-
 <body>
-    <div class="navbar">
-        <div class="navbar-container">
-            <div class="logo-container">
-                <h1 class="logo">SKyier</h1>
-            </div>
-            <div class="menu-container">
-                <ul class="menu-list">
-                    <li class="menu-list-item active">Home</li>
-                    <li class="menu-list-item">Movies</li>
-                    <li class="menu-list-item">Series</li>
-                    <li class="menu-list-item">Popular</li>
-                    <li class="menu-list-item">Trends</li>
+       
+       <nav class="flex-div">
+           <div class="nav-left flex-div">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhMrXkhCN1m1ynaYdQTRMK49JFNn_seAjOQfO3dla3PW24xJ5lSY9LATaBMTnY82h62DM9-EuS_9rGUtnWJZ6ezJZkatuT0LCUcADs0wxoU_E5rr1ndl-jp6-ShGC2UthB8sTCUI2wnlNz3APf4QAdnq7sHsmz1EtQg6jMMmgIyi7JlerSPZWnSNI12g/s45/menu.png" class="menu-icon">
+              <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhb8ZceIWuZefoAVEe8s24l54njzWFwR3qsaW0g9fZu8ZZfGRGMUM4wwosEgYdimQ5pacmqNzY_jRxYHZHqeY_LOAn0lRCpHQRpdjreA88ID_WVZbvcKPHBQ2NLKlQh-KQQvBAB09Yha-32OryWcZNGaEBTQPywNEnj9-VIOw4RspnPGgT36oygpolqfg/s234/logo.png" class="logo">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6vAOiOUtJyrw54c5yPUHHVTpbqvHt-AaYtESza11Rza3bbK2NqSO536i4b3XJKheli9e9DX1nh3NeZ0IwfP_KaxiBdl7IJxbEOeZ28W1jxghO8Qss0ML82QQSbfVMRlSi6kriTB6JVAt83_qIQjyTmezHI44znZMbLP37P7oeOzgKsOtEArGwfSvCug/s1600/SKyPlay%20fit%20cropped.png" class="logo">-->
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzsHlG7gFtcFJCS0H9fK6nCm7FHiiZD_Jv4nrmAFtri9PVi0UWJKI51HLPKAHwcFBWkRD7hfBMZbk6zodgvkrMmsuvAmDP6KmEX9-Ub2J7oxr9Sk2UEO8UaYcCX2N5ZKKORfs2rI4-VitpS_iPHokpxh4XDwnS6hamDrwHgHuuy7hUsmfWYOnLeCqyGw/s1600/SKyPlay%20with%20circle%20fit%20cropped%20(logo).png" class="logo">
+           </div>
+           <div class="nav-middle flex-div">
+               <div class="search-box flex-div">
+                   <input type="text" placeholder="SKy Search..">
+                   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhELXs1rBnwgYLuQxlab64YXy675yIVXqNjcG8lj_B_fO8NaTE0tc_u8hFdJmn58jcBb0frKdYjvKIOpexRJPSjaVIiEXXVAq4Pqjv06ntzyjSUE4bw-ghu4Gi4pk0giLeEHB9Ers94Yu9X-twAsrvFEvbWS1UIj5wKZ9AN3g6Ao7aEfhhN99_Fnt4RlA/s24/search.png">
+               </div>
+               <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7CuD6-3hbH6AxtVwH0gFiiYDXGac5ucsZGb-rB2H-j3hipOpZHEOCnCnc1ZOCSr-HlepbnXvWUAW511rr0TWHvGZRImxdsPVdmnR00caM8Rea_fhNiq0IHfr3PF-12GLsKhB8fmSjI1PNfVPUt_6PevxQtoFhadLWLC2B6esHKnzg2JxB2P_zcQMjdQ/s62/voice-search.png" class="mic-icon">
+           </div>
+        <div class="nav-right flex-div">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilCYv1jlVmkXu1pwW3PjDVoA5oZv9nZm6i79sfwBf30uhTmbz-x_qxfFftXJ7rZOr6pR-Ry--YVRl4nbz6ihlVgWsuQHKgmXaChTOFuNCd0XGr07ejHQtND6kT_OIaqBpyNtvP9y-Xhm4f46HOk9MlzyQyqSEP1UWrzodgMwEgk5LWphvQx2KHysIbgQ/s50/upload.png">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqwJud9rj5hPz8sK3hbW3-Z6kSlulIm_NxN1Blwa0diPrMyOeVKNwexszOWVsd1go4hPcNSbX7D_FP9DeeJVuLxTcJXXttdtNQXPfdjmlXvivpl0nsqi6wHbJHf1a9Lp_R0JoyVaaNL6pKUFnRXl78SYPwRfvxMD9FOPtpLdyJxzMsZHKsl3BLkVNz0A/s50/more.png">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk55y030eRjvUj4gFDoXRx8bqdzLMs73qseL-_VyM29iBzlzWIjZmOR4CQGUVBqUHfkRrEdzj81OnqDO1bGHoghDCIx4I3sTTfWhD6x97De5iQRsGCWY_arvbbcJ_6W14BESr2_RBDGKlPUo6dwqzRP3K6YzSwlb4DlqEXgZthq8xJXuih4WphamUvkQ/s50/notification.png">
+              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s320/Image.jpg" class="user-icon">
+        </div>
+       </nav>
+       <!--------------------sidebar----------------------->
+       <div class="sidebar">
+           <div class="shortcut-links">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXGYUH88ZhQwWF2iG6KW2Tbny-xz0ftNIePYeGokiHaTQVNKYV1fRYkaThb4JqPdEh2dx7hrbV8quR73bjJlAqsQ_218UKHZd3iSJ5KHfa0FCbtOfKniV8S4s3dmTbiYPK7UL27IqeByEKgx6eETbnH7hTQ1NQFpY0bNcWdxP4SyFlTwN237bVymBBVg/s50/home.png" alt="home image"><p>Home</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT38xxtjxEXT3aAY_sQUzbMwQkC1krh5FKRtHG9CzkTAbyVLwUXZtUAvqNZM3ggOouE8Vq7sYGv4Qoo8CuL0sVXVPNtPeDI1-nXnxRrLOPskOS5QTXqMhmViLjepgM9AlKTmc3tfII5K81TnrFOtmk-UVNN6aSgIJxVw6Okp4ufqwb5utPpYX3n88waQ/s50/explore.png"><p>Explore</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqKLmGS9Ec4m8eOt2HlZwjJ-xgx2mnmU8ovhz42SCBt9dCPdZaV09tzlc6beQb7oIK8F9SoWMoXbnXErvt0jwsVMb3LtMLuuzDu-iwitgmmVn3ckbwpjcsYbwzOWYt7snpNwS1jYcpentOlApzOKv6PaJG-E0rGydczw32tQpnFFQTDQ5tZ6_HeI6iVg/s50/subscriprion.png" alt="image here"><p>Subscription</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQe8kqNZqQDN66XWZ0cJ_VUZ9b9jMIrurrKtwmZaPj_v88V4nFejAut2ew8o-k2-ZQjsJApbCOqsK7hYT-VwTwePtp67ZCXAxO4WxcmkqXzb_LovFHu0ApZuoAN26xbz2Otqwkqidn5Nh4l7l8_XoJxDdXVbWhDjYYWODN38SzOoedR_QhiXstg5E6OQ/s50/library.png" alt="lib imgae"><p>Library</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggQtRuEZrhoODa-B1b7Ot1TZ5w63HowvigV1-1LLOfLq803Ladb5rGCgTp_DeBPm518BtSNb5ZJyS9H9z9WS9MCjcHMwP0edRuGuZs_eYxVn4NGPaTYcsPpkx2zttVAOHYlB7vXEOc1QwHcMfbD4tM4-8X7h57Qr6iLfbSyHSyHzeTSZHIHUciWmhqlQ/s50/history.png"><p>History</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgGhzuMWT50T730b3yccqY_nuyneOfLwATjK8yCMFGXeWnda98Jw3HslGP7ID3_5xEK9U1zxSKlCKVkfL-WO5EBUf5HAEQTfQZZEhZFR3B1-5D_cWohii672XJSx_P7Tlko3fonw2yeOE5vLptgOxcTQItcOONmtF65V1QwujdseuKf3qkVTjytK7BKA/s50/playlist.png" alt="home image"><p>Playlist</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiY7Zo7uWZpJ56sSxQ-pGCLni2Uo_J6R00Sslmq_wErcUWdY0NkdSIVxeYzsr-7xVqW4JYpEE_j7Wd6MDuO0scqJGxDtxP6589KAG-vwH9lWlVrp8iYvb9uXk-CWcYF2brDmYFPKZpgWAwSn7xMRyx75a5jXpT10F5swqFVgvsFdSw15hlYYF-Mf-N_Ug/s50/messages.png" alt="home image"><p>Messages</p></a>
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgprHIiwnH_FN_XVnePgb7E0uD7mDXufZ9OPLLA3rSKegVlTvIZCKqZ3r81u-b1jryasUm4NYJSi7gkcUaiQbUnGggCNTYtMq41bh2a_HgpEbIr3q52R42D1wym5pTJVrMAhD8G_WEwA93fvJfBzP5AveB243OIrtcglWSGtPkk31y5RXGBkCaFzNAk5A/s50/show-more.png" alt="home image"><p>Show More</p></a>
+            <hr>
+       </div>
+       <div class="Subscribed-List">
+           <h3>SUBSCRIBED</h3>
+           <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg" alt="home image"><p> <b> SKyier</b></p></a>
+           <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggR_VrULfcaKPJdOJ7PFzR-cjJc2NTR2TLONlP1eYf-07VR5aMlqyVWg9Fry5hhWhYrA7wfg_cF40tOhS6wzUwAlE_IXqR3WPdFk-Dn2HVyal6FHi5izutMtVUbp3astDPHrmSHFPb7WyLPZPk66xi1SyB3aUAvSjYBPiTrK3k720vG1wJtDtDrGIy-A/s900/mr%20indian%20hacker.png" alt="home image"><p><b> Mr. Indian Hacker</b></p></a>
+           <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKoiWFZsk50y5TLs1U7YN0JFTUYJ7c5Pftey40DQKFOfBf2DSydtr5pUsPQBAlGhrqnG1JjLPLZ5CLfa985uPN8CDnQsorsZOHIvfScAWP6DBJma4qZVsoXc35UK6wp-WqLoUAcBCV-oktz4TPLLslcgj74gOg9SHGuxm0GEdYq678fa3XgoMF2nL6HQ/s225/Crazy-XYZ-logo.png" alt="home image"><p><b> Crazy XYZ</b></p></a>
+           <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEga3keShKZhj3ENZZyMXANrmmAz94ESX6i-5C5YZI0sC6VK8AvAeNEnvmKA9Bn7h2SeFDgq4oZs5luhZluysQkJe105IJXJad0CkdkjiZLkxUgEN0b1_G9BUp_0jmzV9o4RmNaqpcDcQzXOe8ymmLrkuE7QiQ9pEXitzUzaYmNLeE2cMJ9kFmCtl4vI8Q/s850/Experiment%20king.png" alt="home image"><p><b> Experiment kings</b></p></a>
+           <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiXEOscFf7O5iV9itCUBErl3ebT21khBUNz9vfXkwAeR4gBD99uI8VxOw01vSaZ2t1j3geEc4KcGZgOs2OEvNxL42yHK-CgmEBPhWyBtfuFCvJUZB3nJItzJKMqGzQqESS8AYo_7Q2lz2gnXNX25UXvuwHYbXqPN6iwHOvyIfIQlCl1u2uE5fLfI6aJNA/s320/Fun%20with%20science.png" alt="home image"><p><b> Fun with Science</b></p></a>
 
-                </ul>
-            </div>
-            <div class="profile-container">
-                <img class="profile-picture" src="https://study.physicswallah.live/assets/svg/user.svg" alt="">
-                <div class="profile-text-container">
-                    <span class="profile-text">Profile</span>
-                    <i class="fas fa-caret-down"></i>
-                </div>
-                <div class="toggle">
-                    <i class="fas fa-moon toggle-icon"></i>
-                    <i class="fas fa-sun toggle-icon"></i>
-                    <div class="toggle-ball"></div>
+       </div>
+       </div>
+
+
+
+    <!--------------------main--------------------->
+<div class="container">
+    <div class="banner">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGZDZgRh90GmnGaueZ70TWGi1-Svl2Y1g0O_KJxcA1EKttidJ7csEsSAGSpEvruA4w-w0WwYN4-f4bUrgP7RLkMYfC212m83tFmBfCMTw7BLdVE8f53N4uD_x5AcJO9L-XwXmhPSz8zt-JS_1XIpsehXOm0mp7lUXa_aOIbmShS7I9qlw_tyqeApj4SQ/s1600/SKyPlay%20with%20circle%20fit%20cropped.png" alt="banner">
+    </div>
+    <div class="list-container">
+        <div class="vid-list">
+            <a href="play video.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdL_vDFZlCWZ_LH-WR3hwQze2Xjs8gwSUf5YIkMZXx0OfHPgbUJpbhPQW_skzUT1d59pLP_czqxE7xpHA346HdMuilRNhHyYqEg3aX-27GwL7RWbYFPU4A9HzS_K7rHYHEUSwCSj4KUuH01IQdIDSx2u-1bvpbXFzENIuDCV3QXQuubmJ-Y4_-lHvinw/s497/thumbnail1.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="play video.html">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago </p>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div class="sidebar">
-        <i class="left-menu-icon fas fa-search"></i>
-        <i class="left-menu-icon fas fa-home"></i>
-        <i class="left-menu-icon fas fa-users"></i>
-        <i class="left-menu-icon fas fa-bookmark"></i>
-        <i class="left-menu-icon fas fa-tv"></i>
-        <i class="left-menu-icon fas fa-hourglass-start"></i>
-        <i class="left-menu-icon fas fa-shopping-cart"></i>
-    </div>
-    <div class="container">
-        <div class="content-container">
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
-                <img class="featured-title" src="img/f-t-1.png" alt="">
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
-                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
-                    minima voluptatibus incidunt. Accusamus, provident.</p>
-                <button class="featured-button">WATCH</button>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="https://image.tmdb.org/t/p/w185/fCXMgoS1P5vmCDHHuFBulvswR7M.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch </button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="https://github.com/safak/movie-website/blob/0d7c7919070c31d7918f34f502e6635d6f86dd91/img/1.jpeg?raw=true" alt="">
-                            <span class="movie-list-item-title">Star Wars</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="https://github.com/safak/movie-website/blob/0d7c7919070c31d7918f34f502e6635d6f86dd91/img/1.jpeg?raw=true" alt="">
-                            <span class="movie-list-item-title">Storm</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">1917</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Avengers</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="featured-content"
-                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
-                <img class="featured-title" src="img/f-t-2.png" alt="">
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
-                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
-                    minima voluptatibus incidunt. Accusamus, provident.</p>
-                <button class="featured-button">WATCH</button>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
-                </div>
-            </div>
-            <div class="movie-list-container">
-                <h1 class="movie-list-title">NEW RELEASES</h1>
-                <div class="movie-list-wrapper">
-                    <div class="movie-list">
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                        <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
-                            <span class="movie-list-item-title">Her</span>
-                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
-                                hic fugit similique accusantium.</p>
-                            <button class="movie-list-item-button">Watch</button>
-                        </div>
-                    </div>
-                    <i class="fas fa-chevron-right arrow"></i>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjYZF872hpi4RE_8ITWCh2Ix2RV6EspHUh-rGW5UWhr6f5rTeiwR2ay3HSDYa0T5caeY8iCfhR2RLMn3YVsWbNuu72bnZ8bCPjCIozvNCfxf-d9T5A2DqJ17o40T-2UrhOQDvG8RaJokn0UeQ9cxcNQGwCW4N0FwfoMceHFLAES9IgnqpBrJOhEFkIEow/s320/thumbnail2.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
                 </div>
             </div>
         </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhLvcrSVuqqeR8LdHklWPBXUFCuaTRh-uG70mNrtx_RoVClYOdP-nr42pDedbe4xzvhPlgb1uaCGinFZpe9lQ6H-Tl0RqAFCVIOGkWcqU7jY8Rfk9ONEvntcV1_BE8LKXtUDquuKMgTmP69f90eL5ycaGcoFE16sdYopCqTgKxfUk7IyNRAmYAQP5-kmA/s500/thumbnail3.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUfUYwJuDxUC5Wn7P2WvVkxm1di_3R_eJ07AlZUcXgLYQ_8Iv5gYCeUJ8FrgLzezK91N9khSwpU7giKVBJF0hImKvEga6JxVRo4nUUrJfbHX87Xe706GsgLO9u4PsE9jfuQXp2RlheYBPW4V_U2R7pEg16xsve-xQZadR4cFGrV2tSCyxvyPELUfXKmA/s498/thumbnail4.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWA-RrCccSoYdZQiMCmiHBg3_3s5qr5L76TC5XmvfUKYxNBgVPkC-G7qbXaXPsif99ICiFqEJVKAbLW4LndrfdD_aA8jNmTibxBegvDYlDVMDgfIXDmlg5DMblRL--1nFk-KQqvbzS4dK8yaHYcX51U6227MyqhNnnE8YMk6aODX_E0_N_P-dAz-FGZg/s497/thumbnail5.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_R2krAgVbvnrBs_eMKWzsOreMM4E_dn_bAmejdbneqP_v0zhNIQ1mLJPXogDafTunpez0WWchqm46Eo0DlPpSClv6nq-0s1oubGU6DZG0glEC1QEUN9KhGBAVgLnuZwUoTf5T9151-VP4X0VK9RuI9xyC3raVUjuZSnQGxvr6tyOywK-Qwc6pYjMwxQ/s497/thumbnail6.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM68NrbruL-B5_s5CFxKLkZgkCF6vFjizYmP84ciJCrbBu6_TJ6AuZDNwtRBxKXRKUo0A1T42pSCOgorbOv-Mv7uFfSUnlTAtogKoEoI9SO58xfHYkmL4Kl6q-NcwhKbiV7Gy6ynj3_QN-lxG0Pej-lnYZICzhJV-Pi1CKP7ndIrtepgAw1FWwedSEDw/s500/thumbnail7.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="vid-list">
+            <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgt-TrUHfvpz1mqaKVdLc1UKL5rsp0V9_q0l2OQnywLiWoypjseAUF25qsDpzcmpOF-9ApVYREEk--5r6pRWykAJIi4u_Ac2wBfM_dt9AR4hphfHzF5SWfsubOry92Bvx4jnBTrkg5IHEwJNyE1OgRglUOXYXc8rCC_4uocXAWkkEQR3nCtRcxU4yBMHw/s498/thumbnail8.png" class="thumbnail"></a>
+            <div class="flex-div">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhH76Nx2gpRHKU-dOsp8UxFP38Af9DhR-NVCzcAO8_wCwnkvVApy9CX4jQwMjSu1l1bnipQjDtEAUb2EdSr6fFnucuVVA1GjAp1n3qwNDTw4t4429d6QF31MvVuOL_M-ZAztxuffehtlVzWaNv5xGfoK_VAUHe8LSP8UPA8waS0n54Xaptv1N7dJGaDxw/s1304/Image.jpg">
+                <div class="vid-info">
+                    <a href="">Best Channel</a>
+                    <p>SKyier</p>
+                    <p>20k views &bull; 2 months ago</p>
+
+                </div>
+            </div>
+        </div>
+        
+
     </div>
-    <script src="app.js"></script>
+</div>
+
+<script src="script.js"></script>
 </body>
-
 </html>
